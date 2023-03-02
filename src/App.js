@@ -7,9 +7,8 @@ import Tickets from "./pages/Tickets";
 import './App.css';
 
 const App = () => {
-  return (
     <>
-      <Router>
+      <Router basename={window.location.pathname || ''}>
         <Routes>
           <Route exact path="/" element={<Layout />}>
             <Route index element={<Overview />} />
