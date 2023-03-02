@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import HorizontalDivider from "../components/HorizontalDivider";
 import VerticalDivider from "../components/VerticalDivider";
 import TaskCard from "../components/TaskCard";
+import LineChart from "../components/LineChart";
 
 const Overview = () => {
   return (
@@ -39,7 +40,9 @@ const Overview = () => {
                   </div>
                 </div>
               </div>
-              <div className="trend-chart"></div>
+              <div className="trend-chart">
+                <LineChart />
+              </div>
             </div>
             <VerticalDivider height="100" />
             <div className="chart-data">

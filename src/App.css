@@ -19,7 +19,11 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.links, .links:hover {
+  color: var(--color-A4A6B3);
+}
+
+h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
 }
@@ -28,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   --color-363740: #363740;
   --color-3751FF: #3751FF;
   --color-A4A6B3: #A4A6B3;
+  --color-A4A6B3a1: rgba(128, 128, 128, 0.25);
   --color-DFE0EB: #DFE0EB;
   --color-F7F8FC: #F7F8FC;
 }
@@ -38,6 +43,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .gap-12 {
   gap: 12px;
+}
+
+.gap-20 {
+  gap: 20px;
 }
 
 .active {
@@ -51,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .gap-40 {
   gap: 40px;
+}
+
+.gap-60 {
+  gap: 60px;
 }
 
 .layout-wrapper {
@@ -147,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .divider, .vertical-divider {
   height: 1px;
-  background-color: var(--color-DFE0EB);
+  background-color: var(--color-A4A6B3a1);
 }
 
 .vertical-divider {
@@ -203,6 +216,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Chart or Sheet section */
 
+/* trend chart */
+.trend-chart {
+  flex: 1;
+  height: fix-content;
+  padding: 0 20px 20px;
+}
+/* trend chart ends here */
+
 .chart {
   border-radius: 8px;
   contain: content;
@@ -212,6 +233,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .chart .chart-card {
   flex: 3;
+  display: flex;
+  flex-direction: column;
 }
 
 .chart {
@@ -219,6 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .chart-data .card {
+  height: 25%;
   width: 420px;
   border-radius: 0;
   border: 1px solid transparent;
@@ -239,12 +263,41 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   border-radius: 8px;
 }
+
+.task-divider {
+  border-bottom: 1px solid var(--color-A4A6B3a1);
+}
+
+.task-divider:last-child {
+  border-bottom: none;
+}
 /* summary wrapper ends here */
 /* Chart or Sheet section ends */
 
 /* Ticket page */
+
+.all-tickets-border {
+  border: 1px solid var(--color-DFE0EB);
+  border-radius: 10px;
+  background-color: white;
+}
+
 .ordered-ticket {
   padding: 15px 20px;
-  border-bottom: 1px solid var(--color-A4A6B3);
+  border-bottom: 2px solid var(--color-DFE0EB);
+}
+
+.ordered-ticket > div:not(.ticket-three-dots) {
+  flex: 2;
+}
+
+.ordered-ticket .ticket-details {
+  flex: 4!important;
+}
+
+.hide {
+  visibility: hidden;
 }
 /* Ticket page ends here */
+
+

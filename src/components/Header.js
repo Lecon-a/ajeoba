@@ -13,7 +13,7 @@ const Header = (props) => {
               <div>
                 <CurrentTab title={props.activeTab} />
               </div>
-              <div><Menu hideUser={props.hideUserInfo} /></div>
+              <div><Menu /></div>
             </div>
           </div>
         </div>

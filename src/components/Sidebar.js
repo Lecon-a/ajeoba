@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { IoMdSettings } from "react-icons/io";
+import { MdSubscriptions } from "react-icons/md";
 import HorizontalDivider from "./HorizontalDivider";
 // dummy data
 import tabs from "./db/sidebarTabs";
 
 const Sidebar = () => {
-
   const handleClick = (e) => {
-    document.querySelectorAll(".links")
-      .forEach((link) => {
+    document.querySelectorAll(".links").forEach((link) => {
       link.classList.remove("active");
     });
     e.target.parentElement.classList.add("active");
@@ -18,11 +18,11 @@ const Sidebar = () => {
     return (
       <li key={index} id={tab}>
         <Link
-          className="links text-white d-flex gap-30 align-items-center justify-content-start"
+          className="links d-flex gap-30 align-items-center justify-content-start"
           to={tab.title}
           onClick={handleClick}
         >
-          <img src={tab.image} alt="i" />
+          {tab.image}
           <h4 className="m-0">
             {tab.title[0].toUpperCase() +
               tab.title.slice(1, tab.title.length + 1)}
@@ -47,19 +47,21 @@ const Sidebar = () => {
           <ul className="sidebar-upper-list m-0 sidebar-lower-list">
             <li>
               <Link
-                className="text-white d-flex gap-30 align-items-center justify-content-start"
+                className="links d-flex gap-30 align-items-center justify-content-start"
                 to=""
+                onClick={handleClick}
               >
-                <img src="" alt="i" />
+                <IoMdSettings className="fs-3" />
                 <h4 className="m-0">Settings</h4>
               </Link>
             </li>
             <li>
               <Link
-                className="text-white d-flex gap-30 align-items-center justify-content-start"
+                className="links d-flex gap-30 align-items-center justify-content-start"
                 to=""
+                onClick={handleClick}
               >
-                <img src="" alt="i" />
+                <MdSubscriptions className="fs-3" />
                 <h4 className="m-0">Subscription</h4>
               </Link>
             </li>
