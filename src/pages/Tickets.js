@@ -47,9 +47,6 @@ const Tickets = () => {
             <div className="ordered-ticket d-flex align-items-center px-4 py-3">
               <TicketCard />
             </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
           </div>
         </div>
       </div>
