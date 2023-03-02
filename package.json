@@ -51,7 +51,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage":"https://lecon-a.github.io/ajeoba/",
+  "homepage":"https://lecon-a.github.io/ajeoba/src/",
   "devDependencies" : {
     "gh-pages": "^5.0.0"
   }
