@@ -6,7 +6,7 @@ import Tickets from "./pages/Tickets";
 
 import './App.css';
 
-const App = () => {
+const App = () => {(
     <>
       <Router basename={window.location.pathname || ''}>
         <Routes>
@@ -18,7 +18,7 @@ const App = () => {
         </Routes>
       </Router>
     </>
-  );
+  )
 };
 
 export default App;
