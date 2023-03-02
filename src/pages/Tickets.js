@@ -47,6 +47,31 @@ const Tickets = () => {
             <div className="ordered-ticket d-flex align-items-center px-4 py-3">
               <TicketCard />
             </div>
+            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+              <TicketCard />
+            </div>
+            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+              <TicketCard />
+            </div>
+            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+              <TicketCard />
+            </div>
+            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+              <TicketCard />
+            </div>
+            <div className="w-100 p-5 d-flex justify-content-between align-items-center">
+              <h3>All tickets</h3>
+              <div className="d-flex align-items-center gap-60">
+                <div className="d-flex align-items-center gap-20">
+                  <BsSortUp className="fs-3" />
+                  <h4>Sort</h4>
+                </div>
+                <div className="d-flex align-items-center gap-20">
+                  <FaFilter className="fs-5" />
+                  <h4>Filter</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
