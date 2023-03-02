@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ajeoba/static/css/main.13179c23.css",
-    "main.js": "/ajeoba/static/js/main.314be173.js",
+    "main.js": "/ajeoba/static/js/main.00302bd1.js",
     "index.html": "/ajeoba/index.html",
     "main.13179c23.css.map": "/ajeoba/static/css/main.13179c23.css.map",
-    "main.314be173.js.map": "/ajeoba/static/js/main.314be173.js.map"
+    "main.00302bd1.js.map": "/ajeoba/static/js/main.00302bd1.js.map"
   },
   "entrypoints": [
     "static/css/main.13179c23.css",
-    "static/js/main.314be173.js"
+    "static/js/main.00302bd1.js"
   ]
 }
